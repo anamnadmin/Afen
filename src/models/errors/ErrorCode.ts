@@ -1,0 +1,30 @@
+// models/errors/ErrorCode.ts
+export enum ErrorCode {
+  // Syntax errors (1xxx)
+  SYNTAX_INVALID_TOKEN = 1001,
+  SYNTAX_UNEXPECTED_EOF = 1002,
+  SYNTAX_MISSING_SEMICOLON = 1003,
+
+  // Type errors (2xxx)
+  TYPE_MISMATCH = 2001,
+  TYPE_UNKNOWN_IDENTIFIER = 2002,
+  TYPE_INVALID_OPERATION = 2003,
+
+  // Runtime errors (3xxx)
+  RUNTIME_DIVISION_BY_ZERO = 3001,
+  RUNTIME_NULL_POINTER = 3002,
+  RUNTIME_TIMEOUT = 3003,
+  RUNTIME_OUT_OF_MEMORY = 3004,
+
+  // Graph errors (4xxx)
+  GRAPH_CYCLE_DETECTED = 4001,
+  GRAPH_NODE_NOT_FOUND = 4002,
+  GRAPH_EDGE_INVALID = 4003,
+
+  // Reasoning errors (5xxx)
+  REASONING_INFERENCE_FAILED = 5001,
+  REASONING_RULE_CYCLE = 5002,
+
+  // Generic
+  UNKNOWN_ERROR = 9999,
+}
