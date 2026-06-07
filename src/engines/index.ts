@@ -1,6 +1,8 @@
-// engines/index.ts
 export { GraphEngine } from './graphEngine';
-export { RootCauseEngine, FaultEvent } from './rootCauseEngine';
+export { RootCauseEngine } from './rootCauseEngine';
 export { ImpactEngine } from './impactEngine';
-export { ConfidenceEngine, ConfidenceScore } from './confidenceEngine';
-export { ReasoningEngine, Explanation, QueryResult } from './reasoningEngine';
+export { ConfidenceEngine } from './confidenceEngine';
+export { ReasoningEngine } from './reasoningEngine';
+export type { FaultEvent } from './rootCauseEngine';
+export type { ConfidenceScore } from './confidenceEngine';
+export type { Explanation, QueryResult } from './reasoningEngine';

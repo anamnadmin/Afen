@@ -1,6 +1,8 @@
-// src/core/graph/index.ts
-export { GraphNode, GraphNodeData } from './GraphNode';
-export { GraphEdge, GraphEdgeData } from './GraphEdge';
-export { GraphBuilder, BuildInput } from './GraphBuilder';
+export { GraphNode } from './GraphNode';
+export { GraphEdge } from './GraphEdge';
+export { GraphBuilder } from './GraphBuilder';
 export { GraphStore } from './GraphStore';
 export { GraphTraversal } from './GraphTraversal';
+export type { GraphNodeData } from './GraphNode';
+export type { GraphEdgeData } from './GraphEdge';
+export type { BuildInput } from './GraphBuilder';

@@ -1,2 +1,3 @@
 export { DependencyGraph } from './DependencyGraph';
-export { DependencyResolver, ResolvedDependency } from './DependencyResolver';
+export { DependencyResolver } from './DependencyResolver';
+export type { ResolvedDependency } from './DependencyResolver';

@@ -1,4 +1,4 @@
-// models/uir/index.ts
 export { UIRContext } from './UIRContext';
-export { UIREvent, UIREventType } from './UIREvent';
+export { UIREvent } from './UIREvent';
 export { UIRSource } from './UIRSource';
+export type { UIREventType } from './UIREvent';

@@ -3,7 +3,6 @@ import { performance } from 'perf_hooks';
 import { runGraphBenchmark } from './graphBenchmark';
 
 class QueryEngine {
-
   async trace(errorId: string, _maxDepth = 10): Promise<string[]> {
     await new Promise(r => setTimeout(r, 1));
     return [`${errorId}`, `cause_${errorId}`];
@@ -28,9 +27,10 @@ interface QueryBenchmarkResult {
 }
 
 export async function runQueryBenchmark(): Promise<QueryBenchmarkResult[]> {
-  const graphResults = await runGraphBenchmark();
-  const { engine } = graphResults[0] as any;
-  const queryEngine = new QueryEngine(engine);
+  // Ensure graph benchmark runs to keep side effects (if any) but discard its result
+  await runGraphBenchmark();
+
+  const queryEngine = new QueryEngine();
 
   const queries = ['TRACE err_42', 'CAUSE err_42', 'EXPLAIN err_42'];
   const results: QueryBenchmarkResult[] = [];

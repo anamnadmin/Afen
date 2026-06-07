@@ -1,4 +1,5 @@
-// queries/parser/index.ts
-export { Token, TokenType, createToken } from './Token';
 export { Tokenizer } from './Tokenizer';
-export { Parser, ParseError, ASTCommand } from './Parser';
+export { Parser } from './Parser';
+export { createToken } from './Token';
+export type { Token, TokenType } from './Token';
+export type { ASTCommand, ParseError } from './Parser';

@@ -1,3 +1,6 @@
-export { ReasoningRule, ReasoningRuleCondition, ReasoningRuleAction } from './ReasoningRule';
-export { ReasoningChain, ChainStep } from './ReasoningChain';
-export { ReasoningEngine, ReasoningContext } from './ReasoningEngine';
+export { ReasoningRule } from './ReasoningRule';
+export { ReasoningChain } from './ReasoningChain';
+export { ReasoningEngine } from './ReasoningEngine';
+export type { ReasoningRuleCondition, ReasoningRuleAction } from './ReasoningRule';
+export type { ChainStep } from './ReasoningChain';
+export type { ReasoningContext } from './ReasoningEngine';

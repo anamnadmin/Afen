@@ -1,3 +1,4 @@
 export { BlastRadius } from './BlastRadius';
-export { ImpactAnalyzer, ImpactAnalysisInput } from './ImpactAnalyzer';
+export { ImpactAnalyzer } from './ImpactAnalyzer';
 export { ImpactReport } from './ImpactReport';
+export type { ImpactAnalysisInput } from './ImpactAnalyzer';

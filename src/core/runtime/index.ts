@@ -1,3 +1,4 @@
-export { RuntimeAdapter, RuntimeEvent } from './RuntimeAdapter';
 export { RuntimeCollector } from './RuntimeCollector';
-export { RuntimeWatcher, RuntimeWatcherCallback } from './RuntimeWatcher';
+export { RuntimeWatcher } from './RuntimeWatcher';
+export type { RuntimeAdapter, RuntimeEvent } from './RuntimeAdapter';
+export type { RuntimeWatcherCallback } from './RuntimeWatcher';
