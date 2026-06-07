@@ -3,7 +3,6 @@ import { performance } from 'perf_hooks';
 import { runGraphBenchmark } from './graphBenchmark';
 
 class QueryEngine {
-  constructor() {}
 
   async trace(errorId: string, _maxDepth = 10): Promise<string[]> {
     await new Promise(r => setTimeout(r, 1));
