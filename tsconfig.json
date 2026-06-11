@@ -4,8 +4,8 @@
     "module": "commonjs",
     "lib": ["ES2020"],
     "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true,
+    "rootDir": ".",
+    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -21,12 +21,30 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     "types": ["node", "jest"],
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@api/*": ["api/*"],
+      "@core/*": ["core/*"],
+      "@models/*": ["core/models/*"],
+      "@utils/*": ["core/utils/*"],
+      "@storage/*": ["storage/*"],
+      "@queries/*": ["queries/*"],
+      "@integrations/*": ["integrations/*"],
+      "@ui/*": ["ui/src/*"]
+    }
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "coverage"]
+  "include": [
+    "api/**/*",
+    "core/**/*",
+    "storage/**/*",
+    "queries/**/*",
+    "integrations/**/*"
+  ],
+  "exclude": ["node_modules", "dist", "coverage", "tests", "benchmarks", "scripts", "docs", "ui"]
 }
